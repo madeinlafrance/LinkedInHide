@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Hide",
+  "version": "1.1.0",
+  "description": "Collapses every post in the LinkedIn home feed into a one-line card with a reveal toggle.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/active-16.png",
+    "32": "icons/active-32.png",
+    "48": "icons/active-48.png",
+    "128": "icons/active-128.png"
+  },
+  "action": {
+    "default_title": "LinkedIn Hide",
+    "default_icon": {
+      "16": "icons/active-16.png",
+      "32": "icons/active-32.png",
+      "48": "icons/active-48.png",
+      "128": "icons/active-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
