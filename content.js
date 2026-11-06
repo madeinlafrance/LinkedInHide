@@ -31,7 +31,8 @@
   const SUGGESTED_RE = /^(suggested|recommended for you)$/i;
   const FOLLOW_OFFER_RE = /^Follow\b/i;
 
-  const onHomeFeed = () => /^\/(feed\/?)?$/.test(location.pathname);
+  // LinkedIn now redirects /feed/ to /feed/foryou/ (and may add other feed tabs).
+  const onHomeFeed = () => /^\/(feed(\/[a-z-]+)?\/?)?$/i.test(location.pathname);
 
   // ---------------------------------------------------------------------------
   // Finding posts

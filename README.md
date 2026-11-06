@@ -1,4 +1,4 @@
-# LinkedIn Hide
+# browser-linkedin-hide
 
 Chrome extension (Manifest V3) that collapses every post on the LinkedIn **home feed**
 into a one-line card with a reveal toggle.

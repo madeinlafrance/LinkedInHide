@@ -23,8 +23,8 @@ async function paint(enabled) {
   await chrome.action.setIcon({ path: ICON(enabled ? 'active' : 'inactive') });
   await chrome.action.setTitle({
     title: enabled
-      ? 'LinkedIn Hide: on — click to disable'
-      : 'LinkedIn Hide: off — click to enable'
+      ? 'browser-linkedin-hide: on — click to disable'
+      : 'browser-linkedin-hide: off — click to enable'
   });
 }
 

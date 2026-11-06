@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "LinkedIn Hide",
+  "name": "browser-linkedin-hide",
   "version": "1.1.0",
   "description": "Collapses every post in the LinkedIn home feed into a one-line card with a reveal toggle.",
   "permissions": ["storage"],
@@ -11,7 +11,7 @@
     "128": "icons/active-128.png"
   },
   "action": {
-    "default_title": "LinkedIn Hide",
+    "default_title": "browser-linkedin-hide",
     "default_icon": {
       "16": "icons/active-16.png",
       "32": "icons/active-32.png",
